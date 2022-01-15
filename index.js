@@ -1,7 +1,10 @@
-/*
-Mini Challenge:
-Move the `header` element from Page into 
-its own component called "Header"
+/**
+Challenge: 
+
+- Move the `footer` into its own component called "Footer" 
+  and render that component inside the Page component.
+- Move the `h1` and `ol` together into another component
+  called "MainContent" and render inside Page as well.
 */
 
 function Header() {
@@ -10,6 +13,13 @@ function Header() {
             <nav>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="70px" />
             </nav>
+        </header>
+    )
+}
+
+function MainContent() {
+    return (
+        <div>
             <h1>Reaons I'm excited to learn React</h1>
             <ol>
                 <li>Because I want to develop front-end apps</li>
@@ -17,7 +27,13 @@ function Header() {
                 <li>React has a huge community</li>
                 <li>Make good use of react libraries to develop complex features</li>
             </ol>
-        </header>
+        </div>
+    )
+}
+
+function Footer() {
+    return (
+        <footer><small>© 2022 SPD development. All rights reserved.</small></footer>
     )
 }
 
@@ -25,7 +41,8 @@ function Page() {
     return (
         <div>
             <Header />
-            <footer><small>© 2022 SPD development. All rights reserved.</small></footer>
+            <MainContent />
+            <Footer />
         </div>
     )
 }
