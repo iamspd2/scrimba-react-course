@@ -1,30 +1,24 @@
-/*
-Challenge: Starting from scratch, build and render the 
-HTML for our section project. Check the Google slide for 
-what you're trying to build.
+/**
+Challenge: 
 
-We'll be adding styling to it later.
+Part 1: Create a page of your own using a custom Page component
 
-Hints:
-* The React logo is a file in the project tree, so you can
-  access it by using `src="./react-logo.png" in your image
-  element
-* You can also set the `width` attribute of the image element
-  just like in HTML. In the slide, I have it set to 40px
+It should return an ordered list with the reasons why you're
+excited to be learning React :)
+
+Render your list to the page
+
  */
 
-const page = (
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="40px" />
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100k stars on GitHub</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-)
+function Learn() {
+    return(
+        <ol>
+            <li>Because I want to develop front-end apps</li>
+            <li>Without spending too much time</li>
+            <li>React has a huge community</li>
+            <li>Make good use of react libraries to develop complex features</li>
+        </ol>
+    )
+}
 
-ReactDOM.render(page, document.getElementById("root"))
+ReactDOM.render(<Learn />, document.getElementById("root"))
