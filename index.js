@@ -1,30 +1,30 @@
-/**
-Challenge: find out what happens if we try to append JSX
-to our div#root using .append() instead of ReactDOM
+/*
+Challenge: Starting from scratch, build and render the 
+HTML for our section project. Check the Google slide for 
+what you're trying to build.
 
-1. Create a sample page in JSX (≥ 4 elements) and save them in a variable
-2. Select the div with the ID of "root" and use `.append()` to append
-   your JSX
-3. See if you can guess what will show up in the browser before running
-   the code
-4. See if you can explain what actually shows up in the browser
+We'll be adding styling to it later.
+
+Hints:
+* The React logo is a file in the project tree, so you can
+  access it by using `src="./react-logo.png" in your image
+  element
+* You can also set the `width` attribute of the image element
+  just like in HTML. In the slide, I have it set to 40px
  */
 
-const element = (
-    <nav>
-        <h1>Swaraj Dash</h1>
-        <ol>
-            <li>Developer</li>
-            <li>Engineer</li>
-            <li>Football fan</li>
-        </ol>
-    </nav>
+const page = (
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png" width="40px" />
+        <h1>Fun facts about React</h1>
+        <ul>
+            <li>Was first released in 2013</li>
+            <li>Was originally created by Jordan Walke</li>
+            <li>Has well over 100k stars on GitHub</li>
+            <li>Is maintained by Facebook</li>
+            <li>Powers thousands of enterprise apps, including mobile apps</li>
+        </ul>
+    </div>
 )
 
-document.getElementById("root").append(element)
-
-/*
-You will see [object Object] in the browser
-The purpose of this exercise is to remind that JSX returns plain JS objects
-It is only when we render it using ReactDOM.render() are the objects rendered as real DOM objects
-*/
+ReactDOM.render(page, document.getElementById("root"))
