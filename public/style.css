@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
+    height: 100vh;
     background-color: #282D35;
 }
 
@@ -38,8 +39,12 @@ nav {
 }
 
 main {
-    color: #FFFFFF;
     padding: 57px 27px;
+    color: white;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png");
+    background-size: 38%;
+    background-repeat: no-repeat;
+    background-position: 131% 85%;
 }
 
 .main--title {
@@ -50,6 +55,7 @@ main {
 
 .main--list {
     margin-top: 45px;
+    max-width: 400px;
 }
 
 .main--list > li {
