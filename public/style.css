@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: Inter, sans-serif;
+    background-color: #282D35;
 }
 
 nav {
@@ -34,4 +35,29 @@ nav {
 .nav--icon {
     height: 30px;
     margin-right: 7px;
+}
+
+main {
+    color: #FFFFFF;
+    padding: 57px 27px;
+}
+
+.main--title {
+    margin: 0;
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.main--list {
+    margin-top: 45px;
+}
+
+.main--list > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--list > li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
 }
